@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# EasyBikes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+SharedSpace is a platform that provides a wide variety of office and meeting space in your own city and makes interaction between the property owner and the person who needs a good space to work and meet.
 
-In the project directory, you can run:
+- Brings all space at one platform which suits your jobs and makes you feel high.
+- Provides the ultimate flexibility in terms of work environment.
+- Provides coworking offices that are a match for your company’s culture
 
-### `npm start`
+# Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. [Demo](#demo)
+2. [Installation](#installation)
+3. [Technology Stack](#technology-stack)
+4. [Authors](#authors)
+5. [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+[EasyBikes Demo](https://easybikes.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Please Note:
 
-### `npm run build`
+1. We recommend using this app in any browser other than Microsoft Edge
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Test Credentials for SharedSpace Users:**
+| Role | Email / Username | Password |
+| ---- | ------------------------ | ----------- |
+| User | `pesto@project.com` | `11111111` |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Fork or directly clone this repository to your local machine
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Copy the .env.example to .env file and configure the .env file
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Run the below command to install the packages in package.json
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Run the below command to start the app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+ npm start
+```
 
-### Code Splitting
+## Technology Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+We have used MERN stack to develop the Application.
 
-### Analyzing the Bundle Size
+- [React JS](https://reactjs.org/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Tailwindcss](https://tailwindcss.com/docs/installation)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Authors
 
-### Making a Progressive Web App
+- [Swapnil Singh](https://github.com/swapnilsingh2811)
+- [Mohammed zaid Kazi](https://github.com/zaidkazi3008)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](https://opensource.org/licenses/MIT)
