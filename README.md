@@ -1,12 +1,17 @@
 # EasyBikes
 
+![EasyBikes Logo](https://res.cloudinary.com/easybikes/image/upload/v1684816630/logobike1_huico1.png) EasyBikes
+
+
 # Table of Contents
 
-1. [Demo](#demo)
-2. [Installation](#installation)
-3. [Technology Stack](#technology-stack)
-4. [Authors](#authors)
-5. [License](#license)
+- [EasyBikes](#easybikes)
+- [Table of Contents](#table-of-contents)
+  - [Demo](#demo)
+  - [Installation](#installation)
+  - [Technology Stack](#technology-stack)
+  - [Authors](#authors)
+  - [License](#license)
 
 ## Demo
 
