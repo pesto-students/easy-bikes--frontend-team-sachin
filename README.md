@@ -1,6 +1,6 @@
 # EasyBikes
 
-![EasyBikes Logo](https://res.cloudinary.com/easybikes/image/upload/v1684816630/logobike1_huico1.png) EasyBikes
+![EasyBikes Logo](https://res.cloudinary.com/easybikes/image/upload/v1684816630/logobike1_huico1.png)
 
 
 # Table of Contents
