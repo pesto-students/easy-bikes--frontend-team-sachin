@@ -30,6 +30,13 @@ const LoginPage = () => {
     };
     dispatch(login(myForm));
   };
+  const guestlogin=()=>{
+    const myGuest={
+      email:'pesto@project.com',
+      password:11111111,
+    };
+    dispatch(login(myGuest));
+  }
   useEffect(() => {
     console.log(isAuthenticated);
 
@@ -118,6 +125,12 @@ const LoginPage = () => {
               <button className="py-2 px-5 ml-3 bg-white border rounded-xl hover:scale-110  hover:bg-[#22A1F5] hover:text-white duration-300 border-blue-400">
                 Sign Up
               </button>
+                 <button
+              type="submit" onClick={guestlogin}
+              className="w-full block bg-blue-500 hover:bg-blue-400 focus:bg-blue-400 text-white font-semibold rounded-lg px-4 py-3 mt-6"
+            >
+              Guest Login
+            </button>
             </Link>
           </div>
         </div>
