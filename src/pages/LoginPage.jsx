@@ -24,18 +24,28 @@ const LoginPage = () => {
 
   const loginSubmit = (e) => {
     e.preventDefault();
+    console.log(e);
     const myForm = {
       email: loginEmail,
       password: loginPassword,
     };
     dispatch(login(myForm));
   };
-  const guestlogin=()=>{
-    const myGuest={
-      email:'pesto@project.com',
-      password:11111111,
+
+  const guestlogin=(e)=>{
+    e.preventDefault();
+    console.log(e);
+    // const myGuest={
+    //   email:'pesto@project.com',
+    //   password:11111111,
+    // };
+    setLoginEmail('pesto@project.com');
+    setLoginPassword(11111111);
+    const myForm = {
+      email: loginEmail,
+      password: loginPassword,
     };
-    dispatch(login(myGuest));
+    dispatch(login(myForm));
   }
   useEffect(() => {
     console.log(isAuthenticated);
@@ -44,6 +54,8 @@ const LoginPage = () => {
       navigate("/");
     }
   }, [isAuthenticated, dispatch, navigate]);
+
+  
 
   const signInWithGoogle = () => {
     setGoogleLoading(true)
@@ -75,7 +87,7 @@ const LoginPage = () => {
           <p className=" text-am mt-4 text-[#002D74]">
             If you Have An Account, Please Login.
           </p>
-          <form className="mt-6" method="POST" onSubmit={loginSubmit}>
+          <form className="mt-6" method="POST" onSubmit={loginSubmit} name="login">
             <div>
               <label className=" block text-gray-700 ">Email Address</label>
               <input
@@ -110,6 +122,7 @@ const LoginPage = () => {
             >
               Log In
             </button>
+            
           </form>
           <div className="mt-7 grid grid-cols-3 item-center text-gray-500">
             <hr className=" border-gray-500" />
@@ -119,18 +132,22 @@ const LoginPage = () => {
           <button onClick={signInWithGoogle} className=" bg-white border py-2 w-full rounder-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300">
             <GoogleButton/>
           </button>
+          <Link to={"/guestlogin"}>
+            <button
+               type="submit"
+               className="w-full block bg-blue-500 hover:bg-blue-400 focus:bg-blue-400 text-white font-semibold rounded-lg px-4 py-3 mt-6"
+               >
+              Guest Login
+            </button>
+              </Link>
+         
           <div className="text-sm flex justify-between items-center mt-3">
             <p>If you Don't Have Account...</p>
             <Link to={"/signup"}>
               <button className="py-2 px-5 ml-3 bg-white border rounded-xl hover:scale-110  hover:bg-[#22A1F5] hover:text-white duration-300 border-blue-400">
                 Sign Up
               </button>
-                 <button
-              type="submit" onClick={guestlogin}
-              className="w-full block bg-blue-500 hover:bg-blue-400 focus:bg-blue-400 text-white font-semibold rounded-lg px-4 py-3 mt-6"
-            >
-              Guest Login
-            </button>
+              
             </Link>
           </div>
         </div>
