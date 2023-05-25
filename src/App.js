@@ -10,7 +10,7 @@ import CreateBikePost from "./components/CreateBikePost";
 import MyAdPage from "./pages/MyAdPage";
 import FavoritePage from "./pages/FavoritePage";
 import MyProfile from "./components/Profile/MyProfile";
-
+import GuestLogin from "./pages/GuestLogin";
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -18,12 +18,9 @@ import { loaduser } from "./Actions/userAction";
 import Notfound from "./components/Notfound";
 import ChangePassword from "./components/Profile/ChangePassword";
 
-
 function App() {
   const dispatch = useDispatch();
-  const { user, loading, isAuthenticated } = useSelector(
-    (state) => state.user
-  );
+  const { user, loading, isAuthenticated } = useSelector((state) => state.user);
 
   useEffect(() => {
     const storedData = JSON.parse(localStorage.getItem("user"));
@@ -51,6 +48,7 @@ function App() {
         {/* </>
         )} */}
         <Route path={"/profile/change-password"} element={<ChangePassword />} />
+        <Route path={"/guestlogin"} element={<GuestLogin />} />
         <Route path="*" element={<Notfound />}></Route>
       </Route>
     </Routes>
